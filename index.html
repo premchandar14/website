@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!.................................Adding the bootstrap.......................................>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+
+<!......................................... Body of the website start.........................................>
+<body> 
+
+<!........................................add here as well the bootstrap....................................>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!..................................main heading..................................................................>
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgb(251, 250, 250);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!.................................................. menu's.....................................>
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+
+
+
+<!..................................................adding the dropdown menu in that.................................................>
+ 
+<span style="display: inline-block; margin-right: 20px;" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+  <li>
+      <a href="ourservices.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Our Services &#9662;</a>
+      <ul class="dropdown" style="list-style-type: none; padding: 0; display: none; position: absolute; background-color: #10b8a7; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+          <li><a href="walking.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Walking</a></li>
+          <li><a href="behaviourist.html" style="text-decoration: none; color: #f0f5f6; font-weight: bold; font-size: 16px;"> Behaviourist</a></li>
+          <li><a href="homeservices.html" style="text-decoration: none; color: #f8ffff; font-weight: bold; font-size: 16px;">Home Service </a></li>
+          <li><a href="emergencyservices.html" style="text-decoration: none; color: #f1f4f4; font-weight: bold; font-size: 16px;">Emergency care </a></li>
+          <li><a href="vetvideo.html" style="text-decoration: none; color: #fcffff; font-weight: bold; font-size: 16px;"> Vet Vedio</a></li>
+          <li><a href="diet.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diet</a></li>
+          <li><a href="vaccination.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Vaccination</a></li>
+          <li><a href="grooming.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;">Grooming </a></li>
+          <li><a href="medicine.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Medicine</a></li>
+          <li><a href="diagnostic.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> Diagnostic</a></li>
+          <li><a href="" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 16px;"> </a></li>
+      </ul>
+  </li>
+</span>
+
+
+<style>
+  /* Your existing CSS for hover effect */
+  nav ul li a {
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover {
+      color: #fff;
+      animation: blink-animation 0.6s infinite;
+      text-decoration: none;
+  }
+
+  nav ul li a:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #fff;
+  }
+
+  /* Additional CSS for the dropdown */
+  .dropdown li {
+      display: block;
+  }
+
+  .dropdown li:hover {
+      background-color: #ddd; /* Change background color on hover */
+  }
+</style>
+
+<script>
+  // JavaScript for handling dropdown display
+  function showDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'block';
+  }
+
+  function hideDropdown() {
+      var dropdown = document.querySelector('.dropdown');
+      dropdown.style.display = 'none';
+  }
+</script>
+
+                    
+
+
+
+<!....................................... End of the dropdown..............................>
+
+<!................................................ Pharmacy sub cards.............................................>
+
+<span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+
+
+
+<!............................................... End of the subcard related to medicine.........................>
+
+
+
+
+
+
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+
+<!........................................... image of the pets.....................................................>
+
+
+
+ <div style="text-align: center; padding: 20px; border-bottom: 5px;">
+  <img src="images/pet_images.jpg" alt="Description of the image" style="width: 3000; height: 400px;">
+</div>
+
+ <br> <br> <br>   
+
+<!..................................Our VALUES...................................................>
+<div style="text-align: center;">
+  <h2 style="color: #0eb8b8; font-weight: bold; font-size: 28px; font-family: 'Georgia', serif; font-style: italic;">
+    Our <br> VALUES
+  </h2>
+
+  <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px;">
+
+    <!-- Card 1 -->
+    <div style="flex: 1; text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img src="images/Trust & Safety_imagesfor_homepage.jpg" alt="Trust & Safety" style="width: 100px; height: 100px; border-radius: 50%;">
+      <h3>Trust & Safety</h3>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="flex: 1; text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img src="images/Convenience_imagesfor_homepage.webp" alt="Convenience" style="width: 100px; height: 100px; border-radius: 50%;">
+      <h3>Convenience</h3>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="flex: 1; text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <img src="images/Customer Obsession_imagefor_homepage.jpg" alt="Customer Obsession" style="width: 100px; height: 100px; border-radius: 50%;">
+      <h3>Customer Obsession</h3>
+    </div>
+
+  </div>
+</div>
+
+
+
+<br><br>
+
+<!.................................... Applying heading ........................................................>
+
+<h2 style="font-size: 36px; font-family: 'Georgia', serif; font-style: italic; color: #17bcce; text-align: center;">
+  Our Popular Services
+</h2>
+
+ 
+
+
+<br>
+<!...................... pet images and titles with animals and their services..............................................................>
+ 
+
+<!......................................... checking and adding new cards so that its should be in center................................>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/pet_walking.jpg" alt="Pet Walking" style="width: 100%; height: 200px;">
+    <a href="walking.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Walking</strong></p>
+    </a>
+  </div>
+  
+  
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/pet_behaviourist.jpg" alt="Behaviourist" style="width: 100%; height: 200px;">
+    <a href="behaviourist.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Behaviourist</strong></p>
+    </a>
+  </div>
+  
+  
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/home_service.webp" alt="Home Services" style="width: 100%; height: 200px;">
+    <a href="homeservices.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Home Services</strong></p>
+    </a>
+  </div>
+  
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/emergency_care.jpg" alt="Emergency Care" style="width: 100%; height: 200px;">
+    <a href="emergencyservices.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Emergency Care</strong></p>
+    </a>
+  </div>
+  
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/pet_vet_vedio.jpeg" alt="Vet Video" style="width: 100%; height: 200px;">
+    <a href="vetvideo.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Vet Video</strong></p>
+    </a>
+  </div>
+  
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/pet_diet.webp" alt="Diet" style="width: 100%; height: 200px;">
+    <a href="diet.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Diet</strong></p>
+    </a>
+  </div>
+  
+
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/vaccine.jpg" alt="Vaccination" style="width: 100%; height: 200px;">
+    <a href="vaccination.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Vaccination</strong></p>
+    </a>
+  </div>
+  
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/grooming.jpg" alt="Grooming" style="width: 100%; height: 200px;">
+    <a href="grooming.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Grooming</strong></p>
+    </a>
+  </div>
+  
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/medicine.jpeg" alt="Medicines" style="width: 100%; height: 200px;">
+    <a href="medicine.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Medicines</strong></p>
+    </a>
+  </div>
+  
+
+
+  <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+    <img src="images/diagnostic.jpeg" alt="Diagnostic" style="width: 100%; height: 200px;">
+    <a href="diagnostic.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+      <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Diagnostic</strong></p>
+    </a>
+  </div>
+  
+
+</div>
+
+
+
+
+<br><br>
+
+<!.................................. adding new login ............................>
+
+<form id="appointmentForm" style="font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; border-radius: 10px; width: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin: auto; margin-top: 50px;">
+
+  <h2 style="font-family: 'Georgia', serif; font-style: italic; color: #17bcce; text-align: center;">Book Your Appointment</h2>
+
+  <label for="name" style="display: block; margin-bottom: 8px;">Name:</label>
+  <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Please enter a valid name (only alphabetical characters and spaces)" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;">
+
+  <label for="email" style="display: block; margin-bottom: 8px;">Email:</label>
+  <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;" placeholder="example@example.com">
+
+  <label for="phoneNumber" style="display: block; margin-bottom: 8px;">Phone Number:</label>
+  <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required style="width: 100%; padding: 8px; margin-bottom: 16px; box-sizing: border-box;" placeholder="1234567890">
+
+  <button type="button" onclick="bookAppointment()" style="background-color: #159b9b; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Book Now</button>
+</form>
+
+<script>
+  function bookAppointment() {
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const phoneNumberInput = document.getElementById('phoneNumber');
+
+      if (!nameInput.checkValidity()) {
+          alert('Please enter a valid name.');
+          return;
+      }
+
+      if (!emailInput.checkValidity()) {
+          alert('Please enter a valid email address.');
+          return;
+      }
+
+      if (!phoneNumberInput.checkValidity()) {
+          alert('Please enter a valid 10-digit phone number.');
+          return;
+      }
+
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const phoneNumber = phoneNumberInput.value;
+
+      // You can send this data to the backend using AJAX or other methods
+      // For simplicity, we'll just display an alert here
+      alert(`Appointment booked for ${name} with email ${email} and phone number ${phoneNumber}`);
+
+      // Close the alert popup
+      nameInput.value = '';
+      emailInput.value = '';
+      phoneNumberInput.value = '';
+  }
+</script>
+
+
+<br><br>
+
+
+<!........................................................new cards......................................................................>
+
+  
+<!.................................About Section..........................................................>
+      
+
+  <main style="padding: 20px;">
+    <section id="about">
+    
+      <div style="background-color: #f2f2f2; width: 1000px; margin: 50px auto; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center; border-radius: 10px;">
+        <h1 style="margin: 20px; font-family: 'Georgia', serif; color: #159b9b;">About Us</h1>
+
+        <div style="text-align: justify; padding: 20px;">
+          <p style="color: #01080f;">Pet Consulting is dedicated to ensuring the optimal health and well-being of your beloved pets. Our commitment is to provide exemplary care, offering tailored solutions to meet the unique needs of each animal entrusted to us. With a team of experienced veterinarians and passionate pet care professionals, we strive to deliver comprehensive services ranging from routine check-ups to specialized treatments.</p>
+
+          <p style="color: #01050b;">We understand the challenges and responsibilities of pet ownership. Our goal is to be your reliable partner, offering guidance and support to enhance the happiness and vitality of your furry companions. From preventive healthcare, grooming, vaccinations, to emergency care, our services are designed to cater to every aspect of your pet's health.</p>
+          
+          <p style="color: #000610;">At Pet Consulting, we believe in fostering a nurturing environment where your pets feel safe and cared for. Our compassionate approach and dedication ensure that your pets receive the highest quality of care, allowing them to live healthy and fulfilling lives. Your pet's well-being is our priority, and we are here to provide exceptional care and support every step of the way.</p>
+          
+        </div>
+      </div>
+      <style>
+        div:hover {
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        }
+      </style>
+    </section>
+
+
+    <br><br><br><br> 
+<!......................................... Our Popular Specialists  .............................>
+
+<h2 style="font-size: 36px; font-family: 'Georgia', serif; font-style: italic; color: #159b9b; text-align: center;">
+  Our Popular Specialists
+</h2>
+
+<br>
+
+
+    <!.....................some doctor's images with some refernce............................................................................>
+
+ 
+
+    <div style="width: 90%; height: auto; background-color: #f2f2f2; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: flex; justify-content: center; margin: 20px auto;">
+      <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+        <h2 style="margin: 20px; text-align: center; color: #1b4e9f; font-family: 'Georgia', serif;">Dr Emily Hernandez</h2>
+
+        <div style="margin: 20px;">
+          <!-- Add your dr. info here -->
+          <p style="text-align: justify;">Dr. Emily Hernandez is a renowned figure in veterinary medicine, specializing in cardiology for animals. With over two decades of experience and a distinguished career, Dr. Hernandez has dedicated her expertise to diagnosing and treating heart conditions in animals. Her profound understanding of cardiovascular diseases in pets has led to innovative treatments and life-saving interventions. Her commitment to providing comprehensive care and advanced solutions has earned her recognition as a pioneer in veterinary cardiology, making her an invaluable resource for pet owners seeking specialized heart care for their beloved animals..</p>
+        </div>
+      </div>
+      
+      <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+        <h2 style="margin: 20px; text-align: center; color: #1b4e9f; font-family: 'Georgia', serif;">Dr Thomas Bennett</h2>
+        <div style="margin: 20px;">
+          <!-- Add your dr info here -->
+          <p style="text-align: justify;">Dr. Thomas Bennett stands as a leading veterinary neurologist known for his exceptional work in diagnosing and treating neurological disorders in animals. With a strong foundation in veterinary neurology and neurosurgery, Dr. Bennett addresses a wide range of neurological conditions in pets, including seizures, spinal disorders, and nerve injuries. His expertise lies in employing cutting-edge diagnostic techniques and developing tailored treatment plans to improve the quality of life for animals with neurological issues. Dr. Bennett's dedication to advancing the field of veterinary neurology has positioned him as a key figure in providing specialized care for pets facing complex neurological challenges.</p>
+        </div>
+      </div>
+      
+      <div style="width: 30%; height: auto; background-color: white; border-radius: 10px; box-shadow: 0px 0px 10px gray; display: inline-block; margin: 20px; text-align: center;">
+        <h2 style="margin: 20px; text-align: center; color: #1b4e9f; font-family: 'Georgia', serif;">Dr Sophia</h2>
+        <div style="margin: 20px;">
+          <!-- Add your dr. into here -->
+          <p style="text-align: justify;">Dr. Sophia Lee is a distinguished veterinary dermatologist recognized for her expertise in addressing skin conditions and allergies in animals. With a deep understanding of dermatological issues in pets, Dr. Lee offers comprehensive consultations and treatments for various skin disorders, including allergies, infections, and chronic dermatitis. Her commitment to resolving skin-related problems in animals through precise diagnosis and individualized treatment strategies has earned her accolades in the veterinary community. Dr. Lee's specialized knowledge and compassionate approach make her a sought-after professional for pet owners seeking expert care for their furry companions' skin health.</p>
+        </div>
+      </div>
+    </div>
+    
+    <br> <br> <br> 
+
+     
+
+<!............................................... some of the images related to the services................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 20px auto; padding: 20px;">
+    <!-- Services Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #1b4e9f; font-size: 24px; margin-bottom: 15px;">Services</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Pet Grooming</li>
+        <li style="margin-bottom: 10px;">Dog Walking</li>
+        <li style="margin-bottom: 10px;">Dog Behaviourist</li>
+        <li style="margin-bottom: 10px;">Vet Home Visit</li>
+        <li style="margin-bottom: 10px;">Vet Video Call</li>
+        <li style="margin-bottom: 10px;">Pet Nutritionist</li>
+        <li style="margin-bottom: 10px;">Cat Grooming</li>
+        <li style="margin-bottom: 10px;">Experience Center</li>
+        <li style="margin-bottom: 10px;">Dog Food Planner</li>
+      </ul>
+    </div>
+
+    <!-- Social Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #1b4e9f; font-size: 24px; margin-bottom: 15px;">Social</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Blogs</li>
+        <li style="margin-bottom: 10px;">Adoptions</li>
+        <li style="margin-bottom: 10px;">Ask Questions</li>
+        <li style="margin-bottom: 10px;">Stories</li>
+        <li style="margin-bottom: 10px;">Polls</li>
+      </ul>
+    </div>
+
+    <!-- Blogs Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #1b4e9f; font-size: 24px; margin-bottom: 15px;">Blogs</h2>
+      <ul style="list-style-type: none; padding: 0; overflow-y: auto; max-height: 250px;">
+        <li style="margin-bottom: 10px;">Why Do Dogs Steal and Protect Things and How to Prevent It</li>
+        <li style="margin-bottom: 10px;">Decoding Your Doggie's Poop Color</li>
+        <li style="margin-bottom: 10px;">Absolutely Avoid These Nutrients in Your Pet Food!</li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div style="width: 23%; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <h2 style="color: #1b4e9f; font-size: 24px; margin-bottom: 15px;">Contact Us</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">Phone: 08049670496</li>
+        <li style="margin-bottom: 10px;">Email: social@kuddle.pet</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!........................................................... last section of the  website.................................................................>
+<div style="font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <div style="max-width: 600px; margin: 20px auto; padding: 20px; display: flex; justify-content: space-between;">
+    <a href="#" style="text-decoration: none; color: #1b4e9f; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">About Us</a>
+    <a href="#" style="text-decoration: none; color: #1b4e9f; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Privacy Policy</a>
+    <a href="#" style="text-decoration: none; color: #1b4e9f; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Terms & Conditions</a>
+    <a href="#" style="text-decoration: none; color: #1b4e9f; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Refund Policy</a>
+    <a href="#" style="text-decoration: none; color: #1b4e9f; padding: 10px; border-radius: 5px; transition: all 0.3s; white-space: nowrap;">Return Policy</a>
+  </div>
+</div>
+
+<style>
+  a:hover {
+    background-color: #4c8beb;
+    color: #12658f;
+  }
+</style>
+
+
+
+
+  <footer style="text-align: center; background-color: #f5f5f5; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2023 Pet Consulting. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

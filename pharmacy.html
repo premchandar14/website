@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!.................................Adding the bootstrap.......................................>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<!............................... title of the website..................................>
+  <title  >Pet Consulting</title>
+</head>
+
+ 
+
+<!......................................... Body of the website start.........................................>
+<body> 
+
+<!........................................add here as well the bootstrap....................................>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!..................................main heading..................................................................>
+
+    <header style="background-color: #159b9b; padding: 20px;">
+        <div style="max-width: 960px; margin: 0 auto;">
+          <h1 style="font-size: 38px; font-family: 'Georgia', serif; font-style: italic; color: rgb(249, 251, 253); letter-spacing: 2px; text-align: left; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(251, 250, 250, 0.3);">
+            &#x1F43E; PetConsulting &#x1F43E;
+          </h1>
+          
+ 
+  <br>
+
+<!.................................................. menu's.....................................>
+            <nav>
+                <ul style="list-style-type: none; margin-top: 20px; text-align: center; white-space: nowrap;">
+                  <span style="display: inline-block; margin-right: 20px;"><li><a href="index.html" style="text-decoration: none; color: #f3eaea; font-weight: bold; font-size: 18px;">Home</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultant.html" style="text-decoration: none; color: #f5efef; font-weight: bold; font-size: 18px;">Consult a Vet</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="appointment.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">Appointment</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="pharmacy.html" style="text-decoration: none; color: #f1eded; font-weight: bold; font-size: 18px;">Pharmacy</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="ourservices.html" style="text-decoration: none; color: #f4eded; font-weight: bold; font-size: 18px;">Our Services</a></li></span>
+                    <span style="display: inline-block; margin-right: 20px;"><li><a href="consultbybreed.html" style="text-decoration: none; color: #efeded; font-weight: bold; font-size: 18px;">Consult By Breed</a></li></span>
+                    <span style="display: inline-block;"><li><a href="aboutus.html" style="text-decoration: none; color: #f2ebeb; font-weight: bold; font-size: 18px;">About Us</a></li></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <style>
+    /* CSS for hover effect */
+    nav ul li a {
+        position: relative; /* Set position for the underline effect */
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    nav ul li a:hover {
+        color: #fff; /* Change text color to white on hover */
+        animation: blink-animation 0.6s infinite; /* Apply blinking effect */
+        text-decoration: none; /* Remove default underline on hover */
+    }
+    
+    nav ul li a:hover:after {
+        content: ''; /* Add the underline effect */
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #fff; /* Color of the underline */
+    }
+    </style>
+
+
+<br> <br> <br> <br>
+<!........................................... List of  Medicine with details .....................................................>
+
+ <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/MSD Animal Health Bravecto Dog Tick and Flea Control Tablet (pack of 1 tablet)_imagefor_medicine.webp" alt="Pet Walking" style="width: 100%; height: 200px;">
+      <a href="walking_details.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>MSD Animal Health Bravecto Dog Tick and Flea Control Tablet (pack of 1 tablet)</strong></p>
+      </a>
+    </div>
+    
+    
+  
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Intas Pomisol Ear Drops_imagefor_medicine.webp" alt="Behaviourist" style="width: 100%; height: 200px;">
+      <a href="behaviourist_details.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Intas Eazypet Dog Deworming Tablet</strong></p>
+      </a>
+    </div>
+    
+    
+  
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Savavet Fiprofort Plus Dog Tick and Flea Control Spot On_image_for_medicine.png" alt="Home Services" style="width: 100%; height: 200px;">
+      <a href="homeservices.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Savavet Fiprofort Plus Dog Tick and Flea Control Spot On</strong></p>
+      </a>
+    </div>
+    
+  
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Skyec Skyworm Cat Deworming Tablet (pack of 4 tablets)_for_medicine.webp" alt="Emergency Care" style="width: 100%; height: 200px;">
+      <a href="emergencyservices.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Skyec Skyworm Cat Deworming Tablet (pack of 4 tablets)</strong></p>
+      </a>
+    </div>
+    
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Virbac Episoothe Shampoo (200ml)_imagesfor_medicine.webp " alt="Vet Video" style="width: 100%; height: 200px;">
+      <a href="vetvideo.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Virbac Episoothe Shampoo (200ml)</strong></p>
+      </a>
+    </div>
+    
+  
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Vetina_image_for_medicine.webp" alt="Diet" style="width: 100%; height: 200px;">
+      <a href="diet.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong>Vetina Canworm Deworming Suspension (30ml)</strong></p>
+      </a>
+    </div>
+    
+  
+  
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Areion Vet Feli D Deworming Suspension_for_medicine_page.webp" alt="Vaccination" style="width: 100%; height: 200px;">
+      <a href="vaccination.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong> Areion Vet Feli D Deworming Suspension (15ml)</strong></p>
+      </a>
+    </div>
+    
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Savavet Kiwof Plus Dog Deworming Tablet (pack of 10 tablets_imagefor_medicine.webp" alt="Grooming" style="width: 100%; height: 200px;">
+      <a href="grooming.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong> Savavet Kiwof Plus Dog Deworming Tablet (pack of 10 tablets)</strong></p>
+      </a>
+    </div>
+    
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Intas Pomisol Ear Drops_imagefor_medicine.webp" alt="Medicines" style="width: 100%; height: 200px;">
+      <a href="medicine.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong> Intas Pomisol Ear Drops</strong></p>
+      </a>
+    </div>
+    
+  
+  
+    <div style="width: 20%; height: 300px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 5px; overflow: hidden; text-align: center;">
+      <img src="images/Bayer Drontal Plus Tasty Dog Deworming Tablet_imagefor_medicine.webp" alt="Diagnostic" style="width: 100%; height: 200px;">
+      <a href="diagnostic.html" style="text-decoration: none; color: inherit; transition: color 0.3s, transform 0.3s; display: inline-block;">
+        <p style="padding: 10px; margin: 0; cursor: pointer;" onmouseover="this.style.color='#1b4e9f'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='inherit'; this.style.transform='scale(1)';"><strong> Bayer Drontal Plus Tasty Dog Deworming Tablet</strong></p>
+      </a>
+    </div>
+    
+  
+  </div>
+  
+  
+  
+  
+  <br><br>
+<!....................................... Content ..............................>
+<h1 style="text-align: center; color: #17bcce; font-size: 24px; margin-bottom: 10px;">Visit the Supertails Online Pet Pharmacy!</h1>
+
+<p style="text-align: justify; max-width: 800px; margin: 0 auto;">
+    It's important to have access to reliable and high-quality pet medications online for convenience, ease of ordering and also in situations when you don't have a physical pet medicine store nearby. That's where Supertails Online Pet Pharmacy comes in. At Supertails online pet medical shop you can get the best pet medication online to compliment your furry friends' health.
+</p>
+
+<p style="text-align: justify; max-width: 800px; margin: 0 auto;">
+    With an extensive range of categories, including preventive care, supplements, and system-wise care, you can find everything your pets need in one place. At our online pet medicine shop you can purchase dedicated dog medicines and cat medicines, ensuring that no matter what kind of pet you have, their health needs are met.
+</p>
+
+<h2 style="text-align: center; color: #17bcce; font-size: 20px; margin-top: 20px;">Why Choose Supertails Veterinary Pharmacy?</h2>
+
+<p style="text-align: justify; max-width: 800px; margin: 0 auto;">
+    Looking for a reliable pet pharmacy? Choose Supertails Veterinary Pharmacy for a wide range of pet medications and supplies. Enjoy convenient online ordering, fast shipping, and exceptional customer service from a licensed vet. Visit Supertails for all your pet's needs!
+</p>
+
+<!-- Repeat similar structures for other sections -->
+
+<h2 style="text-align: center; color: #17bcce; font-size: 20px; margin-top: 20px;">Importance of a Trustable Online Veterinary Shop</h2>
+
+<p style="text-align: justify; max-width: 800px; margin: 0 auto;">
+    When it comes to taking care of our beloved pets, convenience and accessibility are crucial factors. Online pet pharmacies have become a go-to solution for pet owners as they offer a diverse range of products, including essential medications and supplies to address common issues like fleas, allergies, and more.
+</p>
+
+<!-- Repeat similar structures for other sections -->
+
+<h2 style="text-align: center; color: #17bcce; font-size: 20px; margin-top: 20px;">Trusted Brands for Pet Medicines</h2>
+<p style="text-align: justify; max-width: 800px; margin: 0 auto;">At Supertails Online Pet Pharmacy, you'll find a diverse selection of trusted brands for pet medicines. We only stock products from reputable brands to ensure the safety and effectiveness of every medication.</p>
+<!....................... Making bullet point.......................>
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    position: relative;
+    color: #17bcce;
+    margin-bottom: 10px;
+  }
+
+  li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: #17bcce;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+</style>
+
+<div>
+  <ul>
+    <li>Savavet</li>
+    <li>Vivaldis</li>
+    <li>Intas</li>
+    <li>Skyec</li>
+    <li>Virbac</li>
+    <li>Vetoquinol</li>
+  </ul>
+</div>
+
+
+
+<h2 style="text-align: center; color: #17bcce; font-size: 20px; margin-top: 20px;">Importance of a Trustable Online Veterinary Shop</h2>
+<p style="text-align: justify; max-width: 800px; margin: 0 auto;">When it comes to taking care of our beloved pets, convenience and accessibility are crucial factors. Online pet pharmacies have become a go-to solution for pet owners as they offer a diverse range of products, including essential medications and supplies to address common issues like fleas, allergies, and more.</p>
+ 
+
+
+
+
+
+<br> <br> <br> <br>
+
+
+</body>
+</html>
